@@ -1,0 +1,44 @@
+.button_element_food {
+    display: flex;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: none;
+}
+
+.button_element_food:hover {
+    background-color: #f9f5f3;
+    /*משנה צבע שהעכבר על האלמנט*/
+}
+
+.food_picture {
+    width: 60px;
+    height: 60px;
+    padding: 25px 25px 25px 25px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.div_title_of_food {
+    flex-basis: 40%;
+
+}
+
+.title_of_food {
+    padding: 35px 20px 0 0;
+    margin: 0;
+    color: #f38e82;
+    font-family: Calibri;
+}
+
+.description_of_food {
+    padding: 0 20px 0 0;
+    margin: 0;
+    font-family: Calibri;
+}
+
+.error {
+    text-align: center;
+    color: #f38e82;
+
+}

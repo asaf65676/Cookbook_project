@@ -1,0 +1,48 @@
+body {
+    background-color: ff;
+    margin: 0;
+    border-width: 55px;
+    border-left: 70px;
+    border-right: 70px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, #fbdb89, #f48982) 1;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    background-color:#f9f5f3;
+    height: 20vh;
+    margin-bottom: 2px;
+}
+
+.logo_img{
+    height: 3.6rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+.container_of_foods {
+    display: flex;
+}
+
+.results_main,
+.ingredients_of_recipe_container_main,
+.my_shopping_list {
+    flex: 2;
+
+}
+
+.results_main {
+    background-color: ff;    
+}
+
+.ingredients_of_recipe_container_main {
+    background-color: #f9f5f3;
+    flex: 3;
+   
+}
+
+.my_shopping_list {
+    background-color: ff;
+}

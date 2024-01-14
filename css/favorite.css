@@ -1,0 +1,54 @@
+.favorite_container {
+    display: flex;
+    justify-content: flex-end
+}
+
+.favorite_food_container {
+    position: absolute;
+    top: 185px;
+    right: 70px;
+    width: 250px;
+    background-color: #fff;
+    border: #f38e82 solid 2px;
+}
+.favorite_food{
+    display: flex;
+}
+
+.button_favorite_food {
+    border: none;
+    background-color: #f9f5f3;
+    margin-right: 20px;
+}
+
+.heart-fill {
+    fill: #f38e82;
+    background-color: #f9f5f3;
+}
+.heart-fill:hover {
+    transform: scale(1.2);
+}
+
+.div_delete_favorite{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button_delete_favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #f38e82;
+    background-color: white;
+    width: 17px;
+    height: 17px;
+}
+
+.button_delete_favorite:hover {
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border: none;
+}
+

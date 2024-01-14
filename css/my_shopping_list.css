@@ -1,0 +1,51 @@
+.title_my_shopping_list {
+    color: #f38e82;
+    text-align: center;
+    margin: 60px 0 20px 0;
+}
+
+.shoping_element {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.change_amount {
+    margin: 0px 0px 0 20px;
+    width: 40px;
+    height: 30px;
+}
+
+.div_button_add_remove{
+    display: block;
+    margin-right: 15px;
+    width: 15px;
+}
+.button_add_component, .button_remove_component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 15px;
+}
+
+.shoping_element_text {
+    margin-right: 10px;
+}
+
+.button_remove_product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #f38e82;
+    background-color: white;
+    width: 17px;
+    height: 17px;
+}
+
+.button_remove:hover {
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border: none;
+}

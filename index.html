@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/results_list_foods.css">
+    <link rel="stylesheet" href="css/ingredients_of_the_recipe_header.css">
+    <link rel="stylesheet" href="css/ingredients_of_the_recipe_body.css">
+    <link rel="stylesheet" href="css/ingredients_of_the_recipe_footer.css">
+    <link rel="stylesheet" href="css/my_shopping_list.css">
+    <link rel="stylesheet" href="css/favorite.css">
+
+    <script src="js/results_list_foods.js"></script>
+    <script src="js/ingredients_of_the_recipe.js"></script>
+    <script src="js/add_remove_diners.js"></script>
+    <script src="js/my_shoping_list.js"></script>
+    <script src="js/see_favorite.js"></script>
+
+</head>
+
+<body id="body">
+    <header class="header_container">
+
+        <div class="img_for_logo">
+            <img src="img/img_header.png" alt="" class="logo_img">
+        </div>
+
+        <div class="search_container">
+            <input type="text" class="search_box" id="search_box" placeholder="Search over 1,000,000 recipes">
+            <button type="submit" class="search_button" onclick="list_foods()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="magnifying_glass" width="14" height="14"
+                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+                Send
+            </button>
+        </div>
+
+        <div class="favorite_container">
+            <button class="button_favorite_food" id="button_favorite_food" onclick="print_favorite(arr_favorite)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="heart-fill"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <div class="container_of_foods">
+        <div class="results_main" id="results_main">
+            <div id="results"></div>
+        </div>
+        <div class="ingredients_of_recipe_container_main" id="ingredients_of_recipe_container_main">
+            <div id="ingredients_of_recipe_container"></div>
+        </div>
+        <div class="my_shopping_list" id="my_shopping_list"></div>
+    </div>
+
+    <script>
+        var storedArray = JSON.parse(localStorage.getItem("arr_favorite"));
+        var arr_favorite = storedArray || [];
+        localStorage.setItem("arr_favorite", JSON.stringify(arr_favorite));
+    </script>
+</body>
+
+</html>

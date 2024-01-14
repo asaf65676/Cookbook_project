@@ -1,0 +1,100 @@
+.img_of_food {
+    width: 100%;
+}
+
+.div_header_container {
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    background-color: #f9f5f3;
+}
+
+.ready_in_minutes,
+.servings,
+.svg_clock,
+.svg_man {
+    display: inline;
+}
+
+.ready_in_minutes,
+.servings {
+    margin-left: 5px;
+    font-family: Calibri;
+}
+
+.container_time {
+    flex-basis: 35%;
+}
+
+.svg_clock {
+    width: 16px;
+    height: 16px;
+    margin-left: 50px;
+    fill: #f38e82;
+}
+
+.container_number_diners {
+    display: flex;
+    align-items: center;
+    flex-basis: 45%;
+}
+
+.svg_man {
+    width: 16px;
+    height: 16px;
+    margin-left: 30px;
+    fill: #f38e82;
+}
+
+.button_add_diners, .button_remove_diners {
+    border: 2px solid #f38e82;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    background-color: #f9f5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_add_diners{
+    margin-left: 10px;
+}
+
+.button_remove_diners {
+    margin-left: 5px;
+}
+
+.button_add_diners:hover,
+.button_remove_diners:hover {
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border: none;
+}
+
+.container_favourite_food {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-end;
+}
+
+.button_add_favorite_to_list {
+    background-color: #f9f5f3;
+    border: none;
+    padding: 0;
+}
+
+.svg_heart {
+    width: 33px;
+    height: 30px;
+    margin-right: 50px;
+    fill: #f38e82;
+    background-color: #f9f5f3;
+}
+
+.svg_heart:hover {
+    transform: scale(1.2);
+}
+
+.svg_heart path {
+    transform: scale(2);  /* הגדלת גודל תמונת הלב */
+}

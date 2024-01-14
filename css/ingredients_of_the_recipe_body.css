@@ -1,0 +1,20 @@
+.title_component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 20px 0;
+    background-color: #f2efee;
+}
+
+.component_container {
+    display: flex;
+    background-color: #f2efee;
+}
+
+.components {
+    margin: 20px 0 20px 40px;
+}
+
+.left_components {
+    margin-left: 60px;
+}
