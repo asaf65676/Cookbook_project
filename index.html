@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/ingredients_of_the_recipe_footer.css">
     <link rel="stylesheet" href="css/my_shopping_list.css">
     <link rel="stylesheet" href="css/favorite.css">
+    
 
     <script src="js/results_list_foods.js"></script>
     <script src="js/ingredients_of_the_recipe.js"></script>
@@ -31,8 +32,8 @@
         </div>
 
         <div class="search_container">
-            <input type="text" class="search_box" id="search_box" placeholder="Search over 1,000,000 recipes">
-            <button type="submit" class="search_button" onclick="list_foods()">
+            <input type="text" class="search_box" id="search_box" onchange="list_foods()" placeholder="Search over 1,000,000 recipes">
+            <button type="submit" class="search_button" id="search_button"  onclick="list_foods()">
                 <svg xmlns="http://www.w3.org/2000/svg" class="magnifying_glass" width="14" height="14"
                     fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path
@@ -43,7 +44,7 @@
         </div>
 
         <div class="favorite_container">
-            <button class="button_favorite_food" id="button_favorite_food" onclick="print_favorite(arr_favorite)">
+            <button class="button_favorite_food" id="button_favorite_food" onclick="open_close_favorite_container()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="heart-fill"
                     viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -68,6 +69,12 @@
         var storedArray = JSON.parse(localStorage.getItem("arr_favorite"));
         var arr_favorite = storedArray || [];
         localStorage.setItem("arr_favorite", JSON.stringify(arr_favorite));
+
+
+        var favorite_food_container = document.createElement("div");
+        favorite_food_container.className = "favorite_food_container";
+        favorite_food_container.id = ("favorite_food_container")
+        document.body.appendChild(favorite_food_container);
     </script>
 </body>
 

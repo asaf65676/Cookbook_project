@@ -1,16 +1,23 @@
+var favorite_container_open = false;
+
+function open_close_favorite_container() {
+  favorite_container_open = !favorite_container_open;
+  
+  if (favorite_container_open) {
+    print_favorite(arr_favorite);
+  } else {
+    document.getElementById('favorite_food_container').innerHTML = "";
+  }
+}
 
 function print_favorite(arr_favorite) {
-
-    var favorite_food_container = document.createElement("div");
-    favorite_food_container.className = "favorite_food_container";
-    document.body.appendChild(favorite_food_container);
 
     for (let i = 0; i < arr_favorite.length; i++) {
 
         //יצירת תגית כללית למאכל
         var favorite_food = document.createElement("div");
         favorite_food.className = "favorite_food";
-        favorite_food_container.appendChild(favorite_food);
+        document.getElementById('favorite_food_container').appendChild(favorite_food);
 
         // יצירת כפתור 
         var button_element_food = document.createElement("button");

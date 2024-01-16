@@ -31,6 +31,10 @@
     margin: 60px 0 40px 0;
 }
 
+.button_shoping_list:hover {
+    color: black;
+}
+
 .div_directions,
 .div_title_directions,
 .div_text_directions {
@@ -43,7 +47,6 @@
     margin-right: 15px;
 }
 
-
 .button_directions {
     padding: 15px 40px;
     background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
@@ -51,6 +54,8 @@
     border-radius: 20px 20px 20px 20px;
     border: none;
     margin: 20px 0 20px 0;
-    
 }
 
+.button_directions:hover {
+    color: black;
+}

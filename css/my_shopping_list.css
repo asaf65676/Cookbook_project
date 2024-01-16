@@ -4,6 +4,21 @@
     margin: 60px 0 20px 0;
 }
 
+.div_of_delete_shoping_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_delete_shoping_list {
+    padding: 15px 40px;
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    margin: 20px 0 20px 0;
+}
+
 .shoping_element {
     display: flex;
     align-items: center;
@@ -16,17 +31,27 @@
     height: 30px;
 }
 
-.div_button_add_remove{
+.div_button_add_remove {
     display: block;
     margin-right: 15px;
     width: 15px;
 }
-.button_add_component, .button_remove_component{
+
+.button_add_component,
+.button_remove_component {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 18px;
     width: 15px;
+    border: black solid 0.5px;
+    background-color: #f9f5f3
+}
+
+.button_add_component:hover,
+.button_remove_component:hover {
+    color: white;
+    background-color: black
 }
 
 .shoping_element_text {
@@ -44,7 +69,7 @@
     height: 17px;
 }
 
-.button_remove:hover {
+.button_remove_product:hover {
     background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
     color: white;
     border: none;
