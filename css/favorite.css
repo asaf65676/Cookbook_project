@@ -9,7 +9,7 @@
     right: 70px;
     width: 250px;
     background-color: #fff;
-    border: #f38e82 solid 2px;
+    /* border: #f38e82 solid 2px; */
 }
 
 .favorite_food{
@@ -46,7 +46,6 @@
     width: 17px;
     height: 17px;
 }
-
 .button_delete_favorite:hover {
     background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
     color: white;

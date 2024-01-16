@@ -100,7 +100,17 @@ function print_data(id) {
             button_add_favorite_to_list.className = "button_add_favorite_to_list";
             button_add_favorite_to_list.addEventListener('click', function () {
 
-                arr_favorite.push(data);
+                var found = false;
+                for (var i = 0; i < arr_favorite.length; i++) {
+                    if (arr_favorite[i] === data) {
+                        arr_favorite[i] = data;
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    arr_favorite.push(data);
+                }
                 localStorage.setItem("arr_favorite", JSON.stringify(arr_favorite));
 
             })
@@ -153,7 +163,7 @@ function print_data(id) {
                 var originalName = data['extendedIngredients'][i]['originalName'];
 
                 components.innerHTML = amount + " " + unit + " " + originalName;
-                
+
                 if (i < component_length / 2) {
                     right_components.appendChild(components);
                 }

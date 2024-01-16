@@ -43,7 +43,7 @@
             </button>
         </div>
 
-        <div class="favorite_container">
+        <div class="favorite_container" id="favorite_container">
             <button class="button_favorite_food" id="button_favorite_food" onclick="open_close_favorite_container()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="heart-fill"
                     viewBox="0 0 16 16">
@@ -73,8 +73,8 @@
 
         var favorite_food_container = document.createElement("div");
         favorite_food_container.className = "favorite_food_container";
-        favorite_food_container.id = ("favorite_food_container")
-        document.body.appendChild(favorite_food_container);
+        favorite_food_container.id = "favorite_food_container";
+        document.getElementById("button_favorite_food").appendChild(favorite_food_container);
     </script>
 </body>
 
